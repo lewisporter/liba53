@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/include/a5.h
+stdint.h
+-
+stdbool.h
+-
+bits.h
+../src/include/bits.h
+
+../src/include/a53.h
+
+../src/include/bits.h
+stdint.h
+-
+stddef.h
+-
+
+/Users/lewisporter/git/liba53/src/ifc.cpp
+a53.h
+/Users/lewisporter/git/liba53/src/a53.h
+a5.h
+/Users/lewisporter/git/liba53/src/a5.h
+stdio.h
+-
+
