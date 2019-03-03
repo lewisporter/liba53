@@ -10,8 +10,12 @@ add_library(a53 SHARED
         src/kasumi.c
         src/utils.c
         src/ifc.cpp)
-target_include_directories(a53 PUBLIC src/include)
-set_target_properties(a53 PROPERTIES COMPILE_FLAGS -fPIC)
 
-install(TARGETS a53
-        LIBRARY DESTINATION lib)
+target_include_directories(a53 PUBLIC src/include)
+
+set_target_properties(a53 PROPERTIES PUBLIC_HEADER src/include/a53.h)
+
+install(TARGETS a53 LIBRARY
+        DESTINATION lib
+        PUBLIC_HEADER DESTINATION include)
+
