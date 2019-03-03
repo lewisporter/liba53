@@ -9,3 +9,4 @@ debian/files
 debian/substvars
 debian/liba53*
 /.idea/workspace.xml
+/cmake-build-debug
